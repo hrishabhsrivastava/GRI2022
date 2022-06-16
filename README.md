@@ -4,8 +4,8 @@ Deep Learning in Astrophysics
 
 # Description
 
-The tentative goal of this project is to predict the redshift of the galaxies using the available photometric data. The photometric data is available for a
-very narrow band. The neural network will train itself on the available spectroscopic data, and will predict the same for the photometric data. 
+The tentative goal of this project is to predict the redshift of the galaxies using the available photometric data. The photometric data is available for a very broad band, i.e. very few data points. The
+neural network will train itself on the available spectroscopic data, and will predict the same for the photometric data. The project involves the use of Multitask Learning. It will 
 
 # Learning Series
 
@@ -37,4 +37,31 @@ The initial project started with a basic learning of all the basic ML algorithms
 
 ### Output and Comparison
 
-In all the above cases, the predicted output was plotted against the available output as a scatter plot to give a visual idea of the accuracy of the data.  
+In all the above cases, the predicted output was plotted against the available output as a scatter plot to give a visual idea of the accuracy of the data. The arithematic output was calculated by finding
+the **Mean-Squared Error** in each case. Since the K-Fold Cross Validation leads to the different number of iterations, we get different values of MSE for each algorithm. The mean of these MSEs were
+calculated and used as a metric for comparison.
+
+## Deep Learning: Neural Network
+
+### Objective
+
+The primary objective of this module is to improve the accuracy of the already used classic machine learning algorithms by the use of multi-layered neural networks. The idea is to prepare an ideal Neural
+Network to predict the redshift values from the available Photometric points. 
+
+### Dataset used
+
+The same [dataset](data) from the previous machine learning model was used in this case.
+
+### Algorithm Implementation
+
+Two major libraries used in Artificial Neural Networks are [tensorflow](https://www.tensorflow.org/) and [keras](https://keras.io/). Both of them complement each other. After the cleaning of the dataset,
+a random neural network was prepared using random number of layers and units in each layer. The **epoch** and **batch-size** was varied and the algorithm was tested which would provide the best fit. Once
+these were fixed, the testing started for the optimum number of hidden layers and the units in these layers. The testing was completely manual and the output was verified using the plots and the MSE
+metric.
+
+## Multitask Learning
+
+### Objective
+
+The immediate objective is to prepare two neural network. One of which will train on the broad band photometric data and predict the photometric data for the narrow band. The other one will take input
+the combination of the broad band and the narrow band spectrum as predicted by the previous   
