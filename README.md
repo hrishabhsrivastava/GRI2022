@@ -64,4 +64,8 @@ metric.
 ### Objective
 
 The immediate objective is to prepare two neural network. One of which will train on the broad band photometric data and predict the photometric data for the narrow band. The other one will take input
-the combination of the broad band and the narrow band spectrum as predicted by the previous   
+the combination of the broad band and the narrow band spectrum as predicted by the previous.
+
+### Paper method
+
+The given paper which is supposed to be reproduced provides a single MTL network, which takes in broadband photometry and gives output both, the narrowband photometry as well as the broadband photo-z.   
