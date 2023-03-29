@@ -68,4 +68,8 @@ the combination of the broad band and the narrow band spectrum as predicted by t
 
 ### Paper method
 
-The given paper which is supposed to be reproduced provides a single MTL network, which takes in broadband photometry and gives output both, the narrowband photometry as well as the broadband photo-z.   
+The given paper which is supposed to be reproduced provides a single MTL network, which takes in broadband photometry and gives output both, the narrowband photometry as well as the broadband photo-z. The paper claims that the preeiction of narrowband photometry improves the prediction of photometric redshifts. 
+
+### Dataset used
+
+
