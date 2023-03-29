@@ -72,4 +72,13 @@ The given paper which is supposed to be reproduced provides a single MTL network
 
 ### Dataset used
 
-
+The [dataset](PAU_narrowband_data_full.fits) used is from PAU Survey. It consists of broadband fluxes from the following bands:
+- u
+- b
+- v
+- g
+- r
+- z
+- ic
+- j
+- k
