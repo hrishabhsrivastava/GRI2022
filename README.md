@@ -72,7 +72,9 @@ The given paper which is supposed to be reproduced provides a single MTL network
 
 ### Dataset used
 
-The [dataset](PAU_narrowband_data_full.fits) used is from PAU Survey. It consists of broadband fluxes from the following bands:
+The [dataset](PAU_narrowband_data_full.fits) used is from PAU Survey. It has the data of approximately 6500 galaxies. It consists of 
+
+1. Broadband fluxes from the following bands:
 - u
 - b
 - v
@@ -82,3 +84,11 @@ The [dataset](PAU_narrowband_data_full.fits) used is from PAU Survey. It consist
 - ic
 - j
 - k
+
+2. Narrowband fluxes from 455 nm to 855 nm
+
+3. Spectroscopic redshifts.
+
+### Algorithm implemented
+
+The algorithm uses datasets the [Pytorch](https://pytorch.org/) library 
