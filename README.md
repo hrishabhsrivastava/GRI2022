@@ -92,4 +92,15 @@ The [dataset](PAU_narrowband_data_full.fits) used is from PAU Survey. It has the
 ### Algorithm implemented
 
 The algorithm uses the [Pytorch](https://pytorch.org/) library to create two types of neural networks and compare their performances. The first one is a simple linear neural network, which can be presented as:
+
 ![Linear Neural Network](https://github.com/hrishabhsrivastava/GRI2022/blob/main/Model/Linear%20Network.png)
+
+As is evident from the image above, the network takes in broadband spectra and predicts photometric redshifts. It is a simple model. The aim of this project is to create a multitask network to improve the photometric redshifts. The multitask network can be presented as:
+
+![Multitask Network](https://github.com/hrishabhsrivastava/GRI2022/blob/main/Model/MTL%20network.png)
+
+The multitask network takes in broadband spectra and predicts both narrowband fluxes and redshifts while training the network. The main advantage of such a network is that both the output branches improves each others' predictions. Once the model is ready, it just needs a few broadband fluxes and gives output as photometric fluxes, better than the previous model.
+
+### Output and comparison of plot
+
+The given plot shows the comparison of to 
