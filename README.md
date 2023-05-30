@@ -91,4 +91,5 @@ The [dataset](PAU_narrowband_data_full.fits) used is from PAU Survey. It has the
 
 ### Algorithm implemented
 
-The algorithm uses datasets the [Pytorch](https://pytorch.org/) library 
+The algorithm uses the [Pytorch](https://pytorch.org/) library to create two types of neural networks and compare their performances. The first one is a simple linear neural network, which can be presented as:
+[Linear Neural Network](Model/Linear Network.png)
