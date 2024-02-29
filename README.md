@@ -100,7 +100,3 @@ As is evident from the image above, the network takes in broadband spectra and p
 ![Multitask Network](https://github.com/hrishabhsrivastava/GRI2022/blob/main/Model/MTL%20network.png)
 
 The multitask network takes in broadband spectra and predicts both narrowband fluxes and redshifts while training the network. The main advantage of such a network is that both the output branches improves each others' predictions. Once the model is ready, it just needs a few broadband fluxes and gives output as photometric fluxes, better than the previous model.
-
-### Output and comparison of plot
-
-The given plot shows the comparison of to 
